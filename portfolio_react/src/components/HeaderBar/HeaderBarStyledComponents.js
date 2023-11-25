@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import {Link as LinkR} from "react-router-dom";
+import {darkTheme} from "../../utils/Themes";
 
 export const Nav = styled.div`
-  background-color: ${({theme}) => theme.cardLight};
+  background-color: ${() => darkTheme.cardLight};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -49,7 +50,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 50%);
     font-size: 1.5rem;
     cursor: pointer;
-    color: ${({theme}) => theme.textPrimary};
+    color: ${() => darkTheme.textPrimary};
   }
 `;
 
@@ -66,14 +67,14 @@ export const NavItems = styled.ul`
 `;
 
 export const NavLink = styled.a`
-  color: ${({theme}) => theme.textPrimary};
+  color: ${() => darkTheme.textPrimary};
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: ${({theme}) => theme.primary};
+    color: ${() => darkTheme.primary};
   }
 `;
 
@@ -91,7 +92,7 @@ export const ButtonContainer = styled.div`
 
 export const SocialMediaIcon = styled.a`
   background-color: transparent;
-  color: ${({theme}) => theme.white};
+  color: ${() => darkTheme.white};
   padding: 0 0;
   display: flex;
   justify-content: center;
@@ -104,6 +105,6 @@ export const SocialMediaIcon = styled.a`
   margin-right: 30px;
 
   :hover {
-    color: ${({theme}) => theme.primary};
+    color: ${() => darkTheme.primary};
   }
 `;

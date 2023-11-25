@@ -1,6 +1,5 @@
 import React from "react";
 import {
-    HeroBg,
     HeroContainer,
     HeroInnerContainer,
     HeroLeftContainer,
@@ -20,8 +19,6 @@ const Hero = () => {
     return (
         <div id='about'>
             <HeroContainer>
-                <HeroBg>
-                </HeroBg>
                 <HeroInnerContainer>
                     <HeroLeftContainer>
                         <Title>Hi, I am <br/>

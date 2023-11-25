@@ -1,6 +1,5 @@
 export const darkTheme = {
     background:"#1C1C27",
-    backgroundLight: "#1C1E27",
     primary:"#339EC0",
     textPrimary:"#F2F3F4",
     textSecondary:"#b1b2b3",
@@ -13,11 +12,13 @@ export const darkTheme = {
 }
 
 export const lightTheme = {
-    background:"#FFFFFF",
-    backgroundLight: "#f0f0f0",
+    background:"#ffffff",
     primary:"#339EC0",
     textPrimary:"#111111",
-    textSecondary:"#48494a",
+    textSecondary:"#565252",
     card:"#FFFFFF",
-    button:"#5c5b5b",
+    cardLight: '#a6e7ff',
+    button:"#339EC0",
+    white:"#FFFFFF",
+    black:"#000000",
 }

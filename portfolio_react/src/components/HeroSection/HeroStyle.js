@@ -17,27 +17,6 @@ export const HeroContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%); // to separate parts with polygon style
 `;
 
-export const HeroBg = styled.div`
-  position: absolute;
-  display: flex;
-  justify-content: end;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 1360px;
-  overflow: hidden;
-  padding: 0 30px;
-  top: 50%;
-  left: 50%;
-  //-webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-
-  @media (max-width: 960px) {
-    justify-content: center;
-    padding: 0 0;
-  }
-`;
 
 export const HeroInnerContainer = styled.div`
   position: relative;
@@ -162,16 +141,11 @@ export const ResumeButton = styled.a`
   background: linear-gradient(225deg, #29819a 0%, rgb(65, 207, 255) 100%);
   background: -moz-linear-gradient(225deg, #29819a 0%, rgb(65, 207, 255) 100%);
   background: -webkit-linear-gradient(225deg, #29819a 0%, rgb(65, 207, 255) 100%);
-  box-shadow: 20px 20px 60px rgba(28, 28, 39, 255),
-    -20px -20px 60px rgba(28, 28, 39, 255);
 
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
-    box-shadow: 20px 20px 60px rgba(28, 28, 39, 255);
-    filter: brightness(1);
   }
-
 
   @media (max-width: 640px) {
     padding: 12px 0;
