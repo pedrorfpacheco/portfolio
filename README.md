@@ -15,6 +15,7 @@ This is a website of my portfolio on my career in Software Engineer in React.
 * Resume
 * Education topic
 * Experience topic
+* Personal Projects
 * Contacts
   * Linkedin
   * GitHub page
