@@ -131,8 +131,3 @@ export const ContactButton = styled.button`
     transition: none;
   }
 `
-
-export const CustomSnackbarContent = styled(SnackbarContent)`
-  background: #0b71fd;
-  color: aqua;
-`;

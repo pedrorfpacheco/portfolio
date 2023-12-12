@@ -66,9 +66,9 @@ const Contact = () => {
                     open={open}
                     autoHideDuration={6000}
                     onClose={() => setOpen(false)}
+                    message="Email sent successfully!"
                     severity="success"
                     anchorOrigin={{vertical: 'top', horizontal: 'right'}}
-                    ContentProps={{ component: props => <CustomSnackbarContent {...props} message="Email sent successfully!" /> }}
                 />
             </Wrapper>
         </Container>
