@@ -94,6 +94,7 @@ export const ContactInputMessage = styled.textarea`
   color: ${({ theme }) => theme.textPrimary};
   border-radius: 12px;
   padding: 12px 16px;
+  resize: horizontal;
   &:focus {
     border: 1px solid ${({ theme }) => theme.primary};
   }
