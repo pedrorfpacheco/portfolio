@@ -69,7 +69,7 @@ export const experiences = [
     {
         id: 2,
         img: "https://missao.continente.pt/media/lcqpnrg0/logo-sonae-mc.jpg",
-        role: "Customer service (Cashier)",
+        role: "Customer service (Cashier) - Part-Time",
         company: "Sonae MC - Continente Modelo Rio Tinto - Part-Time",
         date: "Dec 2020 - Dec 2021",
         desc: "I was a part-time employee of a supermarket, I handled customer service (cashier) and product replenishment.",
