@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {SnackbarContent} from "@mui/material";
 
 export const Container = styled.div`
   display: flex;
@@ -119,11 +118,12 @@ export const ContactButton = styled.button`
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
-  
+
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
   }
+
   &:disabled {
     background: ${({theme}) => theme.cardLight};
     cursor: default;

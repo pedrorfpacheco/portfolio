@@ -30,7 +30,7 @@ const ItemDocumentWrapper = styled.div`
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -42,7 +42,7 @@ const Card = styled.div`
   border: 0.1px solid #339EC0;
 
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
   }
 
