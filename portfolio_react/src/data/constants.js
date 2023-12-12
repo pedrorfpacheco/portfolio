@@ -9,7 +9,7 @@ export const Bio = {
         "Friend",
     ],
     description:
-        "I have strong organizational skills and demonstrate responsibility, proactivity, dynamism, and resilience in my work. " +
+        "I have strong organizational skills and demonstrate responsibility, proactivity, dynamism and resilience in my work. " +
         "I have a great ability to adapt to new challenges. I like to analyze problems and evaluate different solutions. " +
         "I believe that organization is very important in order to achieve personal and professional goals efficiently.",
     github: "https://github.com/pedrorfpacheco",
