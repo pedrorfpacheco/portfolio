@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {motion} from "framer-motion";
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.cardLight};
+  background: ${({theme}) => theme.cardLight};
   display: flex;
   justify-content: center;
   position: relative;
@@ -71,7 +72,7 @@ export const HeroRightContainer = styled.div`
 export const Title = styled.div`
   font-weight: 700;
   font-size: 50px;
-  color: ${({ theme }) => theme.textPrimary};
+  color: ${({theme}) => theme.textPrimary};
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
@@ -89,7 +90,7 @@ export const TextLoop = styled.div`
   font-size: 32px;
   display: flex;
   gap: 12px;
-  color: ${({ theme }) => theme.textPrimary};
+  color: ${({theme}) => theme.textPrimary};
   line-height: 68px;
   @media (max-width: 960px) {
     text-align: center;
@@ -102,7 +103,7 @@ export const TextLoop = styled.div`
 `;
 
 export const Span = styled.span`
-  color: ${({ theme }) => theme.primary};
+  color: ${({theme}) => theme.primary};
   cursor: pointer;
 `;
 
@@ -110,7 +111,7 @@ export const SubTitle = styled.div`
   font-size: 20px;
   line-height: 32px;
   margin-bottom: 42px;
-  color: ${({ theme }) => theme.grey};
+  color: ${({theme}) => theme.grey};
 
   @media (max-width: 960px) {
     text-align: center;
@@ -160,7 +161,7 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 2px solid ${({theme}) => theme.primary};
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -172,3 +173,19 @@ export const Img = styled.img`
     max-height: 280px;
   }
 `;
+
+export const Banner = styled(motion.div)`
+`;
+
+export const BannerVariants = {
+    animationOne: {
+        y: [0, -20],
+        opacity: 1,
+        transition: {
+            repeat: Infinity,
+            repeatType: 'reverse',
+            ease: "easeIn",
+            duration: 1
+        }
+    }
+};

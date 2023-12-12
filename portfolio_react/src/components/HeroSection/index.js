@@ -1,5 +1,7 @@
 import React from "react";
 import {
+    Banner,
+    BannerVariants,
     HeroContainer,
     HeroInnerContainer,
     HeroLeftContainer,
@@ -16,6 +18,7 @@ import Typewriter from 'typewriter-effect';
 import PerfilPedroPacheco from "../../images/PerfilPedroPacheco.jpg";
 
 const Hero = () => {
+
     return (
         <div id='about'>
             <HeroContainer>
@@ -38,7 +41,9 @@ const Hero = () => {
                         <ResumeButton href={Bio.resume} target='_blank'>Check CV</ResumeButton>
                     </HeroLeftContainer>
                     <HeroRightContainer>
-                        <Img src={PerfilPedroPacheco} alt='Hero'/>
+                        <Banner variants={BannerVariants} animate="animationOne">
+                            <Img src={PerfilPedroPacheco} alt='Hero'/>
+                        </Banner>
                     </HeroRightContainer>
                 </HeroInnerContainer>
             </HeroContainer>
