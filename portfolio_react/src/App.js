@@ -23,7 +23,7 @@ const Wrapper = styled.div`
 `
 
 function App() {
-    const [currentTheme, setCurrentTheme] = useState(lightTheme);
+    const [currentTheme, setCurrentTheme] = useState(darkTheme);
 
     const toggleTheme = () => {
         setCurrentTheme((prevTheme) => (prevTheme === lightTheme ? darkTheme : lightTheme));
