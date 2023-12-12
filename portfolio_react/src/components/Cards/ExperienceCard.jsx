@@ -30,7 +30,7 @@ const ItemDocumentWrapper = styled.div`
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -40,20 +40,31 @@ const Card = styled.div`
   gap: 12px;
   transition: all 0.3s ease-in-out;
   border: 0.1px solid #339EC0;
-  
-  &:hover{
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
   }
-  @media only screen and (max-width: 768px){
-    padding: 10px;
+
+  @media only screen and (max-width: 768px) {
+    padding: 7px;
     gap: 8px;
     width: 300px;
   }
-  &:hover ${ItemDocumentWrapper}{
+  @media only screen and (max-width: 400px) {
+    width: 280px;
+    padding: 5px;
+  }
+  @media only screen and (max-width: 300px) {
+    width: 100%;
+    padding: 3px;
+  }
+
+  &:hover ${ItemDocumentWrapper} {
     display: flex;
   }
-  &:hover ${Span}{
+
+  &:hover ${Span} {
     overflow: visible;
     -webkit-line-clamp: unset;
   }

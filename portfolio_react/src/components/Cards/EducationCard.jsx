@@ -35,9 +35,16 @@ const Card = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 10px;
-    gap: 8px;
+    padding: 7px;
     width: 300px;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 280px;
+    padding: 5px;
+  }
+  @media only screen and (max-width: 300px) {
+    width: 100%;
+    padding: 3px;
   }
 
   &:hover ${ItemWrapper} {

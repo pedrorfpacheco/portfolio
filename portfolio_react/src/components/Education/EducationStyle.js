@@ -7,9 +7,9 @@ export const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 0px 0px 60px 0px;
+    padding: 0 0 60px 0;
     @media (max-width: 960px) {
-        padding: 0px;
+        padding: 0;
     }
 `;
 
