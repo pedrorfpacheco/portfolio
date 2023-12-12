@@ -34,7 +34,8 @@ const HeaderBar = ({onThemeToggle}) => {
                 </NavItems>
                 <ButtonContainer>
                     <SocialMediaIcon onClick={onThemeToggle}>
-                        {theme === darkTheme ? <LightModeIcon style={{width: '38px', height: '38px'}}/> :
+                        {theme === darkTheme ?
+                            <LightModeIcon style={{width: '38px', height: '38px'}}/> :
                             <DarkModeIcon style={{width: '46px', height: '46px'}}/>}
                     </SocialMediaIcon>
                     <SocialMediaIcon href={Bio.linkedin} target='display'>
