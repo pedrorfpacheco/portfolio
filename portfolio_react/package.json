@@ -1,7 +1,7 @@
 {
   "name": "portfolio_react",
   "version": "0.1.0",
-  "homepage": "https://pedrorfpacheco.github.io",
+  "homepage": "https://pedrorfpacheco.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -31,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
