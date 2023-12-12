@@ -50,6 +50,10 @@ export const Desc = styled.div`
   }
 `;
 
+export const ContactRef = styled.div`
+  width: 95%;
+  max-width: 600px;
+`
 
 export const ContactForm = styled.form`
   width: 95%;

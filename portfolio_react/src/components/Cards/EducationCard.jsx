@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {useInView} from "react-intersection-observer";
 
 const Span = styled.span`
   overflow: hidden;
@@ -142,8 +143,13 @@ const DocumentButton = styled.a`
 `
 
 const EducationCard = ({education}) => {
+    const [ref, inView] = useInView({
+        triggerOnce: false, // Change this to false if you want the animation to trigger again whenever it comes in view
+        threshold: 0.8 // Percentage of the element that is in view before the callback triggers
+    });
+
     return (
-        <Card>
+        <Card ref={ref} style={{ opacity: inView ? 1 : 0, transition: 'opacity 0.8s ease-out' }}>
             <Top>
                 <Image src={education.img}/>
                 <Body>

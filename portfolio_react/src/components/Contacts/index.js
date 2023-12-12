@@ -4,7 +4,7 @@ import {
     ContactButton,
     ContactForm,
     ContactInput,
-    ContactInputMessage,
+    ContactInputMessage, ContactRef,
     ContactTitle,
     Container,
     Desc,
@@ -12,6 +12,7 @@ import {
     Wrapper
 } from "./ContactsStyle";
 import {Snackbar} from "@mui/material";
+import {useInView} from "react-intersection-observer";
 
 const Contact = () => {
     const [open, setOpen] = React.useState(false);
@@ -43,24 +44,43 @@ const Contact = () => {
             });
     }
 
+    const [refTitle, inViewTitle] = useInView({
+        triggerOnce: false, // Change this to false if you want the animation to trigger again whenever it comes in view
+        threshold: 1 // Percentage of the element that is in view before the callback triggers
+    });
+
+    const [refDesc, inViewDesc] = useInView({
+        triggerOnce: false, // Change this to false if you want the animation to trigger again whenever it comes in view
+        threshold: 0.9 // Percentage of the element that is in view before the callback triggers
+    });
+
+    const [refEmail, inViewEmail] = useInView({
+        triggerOnce: false, // Change this to false if you want the animation to trigger again whenever it comes in view
+        threshold: 0.25 // Percentage of the element that is in view before the callback triggers
+    });
+
     return (
         <Container id="contacts">
             <Wrapper>
-                <Title>Contact</Title>
-                <Desc>Don't hesitate to contact me if you have any questions or if there are any opportunities you'd
+                <Title ref={refTitle}
+                       style={{opacity: inViewTitle ? 1 : 0, transition: 'opacity 0.8s ease-out'}}>Contact</Title>
+                <Desc ref={refDesc} style={{opacity: inViewDesc ? 1 : 0, transition: 'opacity 0.8s ease-out'}}>Don't
+                    hesitate to contact me if you have any questions or if there are any opportunities you'd
                     like to discuss!</Desc>
-                <ContactForm ref={form} onSubmit={handleSubmit}>
-                    <ContactTitle>Email Me 📩</ContactTitle>
-                    <ContactInput placeholder="Your Email" name="from_email" value={email}
-                                  onChange={(email) => setEmail(email.target.value)}/>
-                    <ContactInput placeholder="Your Name" name="fromName" value={fromName}
-                                  onChange={(fromName) => setFromName(fromName.target.value)}/>
-                    <ContactInput placeholder="Subject" name="subject" value={subject}
-                                  onChange={(subject) => setSubject(subject.target.value)}/>
-                    <ContactInputMessage placeholder="Message" rows="7" name="message" value={message}
-                                         onChange={(message) => setMessage(message.target.value)}/>
-                    <ContactButton type="submit" disabled={!buttonEnabled()}>Send</ContactButton>
-                </ContactForm>
+                <ContactRef ref={refEmail} style={{opacity: inViewEmail ? 1 : 0, transition: 'opacity 0.8s ease-out'}}>
+                    <ContactForm ref={form} onSubmit={handleSubmit}>
+                        <ContactTitle>Email Me 📩</ContactTitle>
+                        <ContactInput placeholder="Your Email" name="from_email" value={email}
+                                      onChange={(email) => setEmail(email.target.value)}/>
+                        <ContactInput placeholder="Your Name" name="fromName" value={fromName}
+                                      onChange={(fromName) => setFromName(fromName.target.value)}/>
+                        <ContactInput placeholder="Subject" name="subject" value={subject}
+                                      onChange={(subject) => setSubject(subject.target.value)}/>
+                        <ContactInputMessage placeholder="Message" rows="7" name="message" value={message}
+                                             onChange={(message) => setMessage(message.target.value)}/>
+                        <ContactButton type="submit" disabled={!buttonEnabled()}>Send</ContactButton>
+                    </ContactForm>
+                </ContactRef>
                 <Snackbar
                     style={{marginTop: '100px'}}
                     open={open}
