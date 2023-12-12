@@ -19,7 +19,7 @@ const ItemWrapper = styled.div`
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: rgba(23, 92, 230, 0.15) 0 4px 24px;
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -30,7 +30,7 @@ const Card = styled.div`
   transition: all 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
   }
 
@@ -125,7 +125,7 @@ const DocumentButton = styled.a`
   text-align: center;
   padding: 6px 4px;
   margin-right: 10px;
-  color: ${({theme}) => theme.white};
+  color: ${({theme}) => theme.newBlack};
   border-radius: 20px;
   cursor: pointer;
   font-size: 12px;

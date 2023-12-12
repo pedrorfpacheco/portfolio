@@ -8,7 +8,7 @@ position: relative;
 z-index: 1;
 align-items: center;
 @media (max-width: 960px) {
-    padding: 0px;
+    padding: 0;
 }
 `
 
@@ -20,7 +20,7 @@ align-items: center;
 flex-direction: column;
 width: 100%;
 max-width: 1350px;
-padding: 0px 0px 80px 0px;
+padding: 0 0 80px 0;
 gap: 12px;
 @media (max-width: 960px) {
     flex-direction: column;
@@ -59,7 +59,7 @@ export const ContactForm = styled.form`
   background-color: ${({ theme }) => theme.card};
   padding: 32px;
   border-radius: 16px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  box-shadow: rgba(23, 92, 230, 0.15) 0 4px 24px;
   margin-top: 28px;
   gap: 12px;
 `
