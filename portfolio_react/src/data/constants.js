@@ -14,7 +14,6 @@ export const Bio = {
         "I believe that organization is very important in order to achieve personal and professional goals efficiently.",
     github: "https://github.com/pedrorfpacheco",
     linkedin: "https://www.linkedin.com/in/pedrorfpacheco/",
-    instagram: "https://www.instagram.com/pedropacheco101/",
     dev: "https://dev.to/pedrorfpacheco",
     resume: "https://drive.google.com/file/d/1F5HZdFUEWuhjHyZmZQK-afTIczvYiidU/view?usp=sharing",
 };
