@@ -15,6 +15,18 @@ const ItemWrapper = styled.div`
   display: none;
   flex-wrap: wrap;
   gap: 8px;
+  @media only screen and (max-width: 768px) {
+    width: 400px;
+  }
+  @media only screen and (max-width: 525px) {
+    width: 300px;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 250px;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 150px;
+  }
 `
 
 const Card = styled.div`
@@ -37,10 +49,18 @@ const Card = styled.div`
 
   @media only screen and (max-width: 768px) {
     padding: 7px;
-    width: 300px;
+    width: 500px;
   }
-  @media only screen and (max-width: 400px) {
-    width: 280px;
+  @media only screen and (max-width: 600px) {
+    padding: 7px;
+    width: 400px;
+  }
+  @media only screen and (max-width: 525px) {
+    width: 350px;
+    padding: 5px;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 300px;
     padding: 5px;
   }
   @media only screen and (max-width: 300px) {
@@ -85,6 +105,21 @@ const Body = styled.div`
 const DocumentsBody = styled.div`
   width: 100%;
   display: flex;
+  @media only screen and (max-width: 768px) {
+    width: 500px;
+  }
+  @media only screen and (max-width: 600px) {
+    width: 400px;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 300px;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 100px;
+  }
+  @media only screen and (max-width: 300px) {
+    width: 100%;
+  }
 `
 
 const Name = styled.div`
@@ -140,6 +175,15 @@ const DocumentButton = styled.a`
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
   background: #339EC0;
+  @media only screen and (max-width: 768px) {
+    max-height: 70px;
+  }
+  @media only screen and (max-width: 525px) {
+    max-height: 100px;
+  }
+  @media only screen and (max-width: 450px) {
+    max-height: 100px;
+  }
 `
 
 const EducationCard = ({education}) => {
@@ -149,7 +193,7 @@ const EducationCard = ({education}) => {
     });
 
     return (
-        <Card ref={ref} style={{ opacity: inView ? 1 : 0, transition: 'opacity 0.8s ease-out' }}>
+        <Card ref={ref} style={{opacity: inView ? 1 : 0, transition: 'opacity 0.8s ease-out'}}>
             <Top>
                 <Image src={education.img}/>
                 <Body>
