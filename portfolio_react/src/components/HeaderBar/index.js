@@ -11,6 +11,7 @@ import {
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LogoPedroPacheco from "../../images/LogoPedroPacheco.png";
+import LogoPedroPachecoWhite from "../../images/LogoPedroPachecoWhite.png";
 import {Bio} from "../../data/constants";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -23,8 +24,11 @@ const HeaderBar = ({onThemeToggle}) => {
     return (
         <Nav>
             <NavContainer>
-                <NavLogo to='/'>
-                    <img src={LogoPedroPacheco} alt='hero-image' style={{height: '80px', width: '270px'}}/>
+                <NavLogo to=''>
+                    {theme === darkTheme ?
+                        <img src={LogoPedroPacheco} alt='hero-image' style={{height: '35px', width: '270px'}}/> :
+                        <img src={LogoPedroPachecoWhite} alt='hero-image' style={{height: '35px', width: '270px'}}/>}
+
                 </NavLogo>
                 <NavItems>
                     <NavLink href="#about">About</NavLink>

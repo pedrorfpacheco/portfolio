@@ -3,7 +3,7 @@ import {Link as LinkR} from "react-router-dom";
 import {darkTheme} from "../../utils/Themes";
 
 export const Nav = styled.div`
-  background-color: ${() => darkTheme.cardLight};
+  background-color: ${({ theme }) => theme.cardLight};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -67,14 +67,14 @@ export const NavItems = styled.ul`
 `;
 
 export const NavLink = styled.a`
-  color: ${() => darkTheme.textPrimary};
+  color: ${({ theme }) => theme.textPrimary};
   font-weight: 500;
   cursor: pointer;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: ${() => darkTheme.primary};
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
@@ -92,7 +92,7 @@ export const ButtonContainer = styled.div`
 
 export const SocialMediaIcon = styled.a`
   background-color: transparent;
-  color: ${() => darkTheme.white};
+  color: ${({ theme }) => theme.textPrimary};
   padding: 0 0;
   display: flex;
   justify-content: center;
@@ -105,6 +105,6 @@ export const SocialMediaIcon = styled.a`
   margin-right: 30px;
 
   :hover {
-    color: ${() => darkTheme.primary};
+    color: ${({ theme }) => theme.primary};
   }
 `;
