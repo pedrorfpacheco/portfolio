@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Button} from "@mui/material";
 
 export const Container = styled.div`
 display: flex;
@@ -104,15 +103,15 @@ export const ContactButton = styled.button`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: #042530;
-  background: linear-gradient(225deg, #042530 0%, #339EC0 100%);
-  background: -moz-linear-gradient(225deg, #042530 0%, #339EC0 100%);
-  background: -webkit-linear-gradient(225deg, #042530 0%, #339EC0 100%);
+  background: rgba(4, 37, 48, 255);
+  background: linear-gradient(225deg, #29819a 0%, rgb(65, 207, 255) 100%);
+  background: -moz-linear-gradient(225deg, #29819a 0%, rgb(65, 207, 255) 100%);
+  background: -webkit-linear-gradient(225deg, #29819a 0%, rgb(65, 207, 255) 100%);
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;
   border: none;
-  color: ${({ theme }) => theme.textPrimary};
+  color: ${({ theme }) => theme.white};
   font-size: 18px;
   font-weight: 600;
   &:disabled {

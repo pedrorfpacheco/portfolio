@@ -125,7 +125,7 @@ const DocumentButton = styled.a`
   text-align: center;
   padding: 6px 4px;
   margin-right: 10px;
-  color: ${({theme}) => theme.black};
+  color: ${({theme}) => theme.white};
   border-radius: 20px;
   cursor: pointer;
   font-size: 12px;
