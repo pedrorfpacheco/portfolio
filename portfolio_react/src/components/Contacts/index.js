@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useRef, useState} from "react";
 import emailjs from "@emailjs/browser";
 import {
     ContactButton,
@@ -6,7 +6,7 @@ import {
     ContactInput,
     ContactInputMessage,
     ContactTitle,
-    Container,
+    Container, CustomSnackbarContent,
     Desc,
     Title,
     Wrapper
@@ -16,10 +16,10 @@ import {Snackbar} from "@mui/material";
 const Contact = () => {
     const [open, setOpen] = React.useState(false);
     const form = useRef();
-    const [fromName, setFromName] = useState();
-    const [email, setEmail] = useState();
-    const [message, setMessage] = useState();
-    const [subject, setSubject] = useState();
+    const [fromName, setFromName] = useState(String);
+    const [email, setEmail] = useState(String);
+    const [message, setMessage] = useState(String);
+    const [subject, setSubject] = useState(String);
 
 
     const buttonEnabled = () => {
@@ -51,18 +51,24 @@ const Contact = () => {
                     like to discuss!</Desc>
                 <ContactForm ref={form} onSubmit={handleSubmit}>
                     <ContactTitle>Email Me 📩</ContactTitle>
-                    <ContactInput placeholder="Your Email" name="from_email" value={email}/>
-                    <ContactInput placeholder="Your Name" name="fromName" value={fromName}/>
-                    <ContactInput placeholder="Subject" name="subject" value={subject}/>
-                    <ContactInputMessage placeholder="Message" rows="7" name="message" value={message}/>
-                    <ContactButton type="submit" disabled={!buttonEnabled}>Send</ContactButton>
+                    <ContactInput placeholder="Your Email" name="from_email" value={email}
+                                  onChange={(email) => setEmail(email.target.value)}/>
+                    <ContactInput placeholder="Your Name" name="fromName" value={fromName}
+                                  onChange={(fromName) => setFromName(fromName.target.value)}/>
+                    <ContactInput placeholder="Subject" name="subject" value={subject}
+                                  onChange={(subject) => setSubject(subject.target.value)}/>
+                    <ContactInputMessage placeholder="Message" rows="7" name="message" value={message}
+                                         onChange={(message) => setMessage(message.target.value)}/>
+                    <ContactButton type="submit" disabled={!buttonEnabled()}>Send</ContactButton>
                 </ContactForm>
                 <Snackbar
+                    style={{marginTop: '100px'}}
                     open={open}
                     autoHideDuration={6000}
                     onClose={() => setOpen(false)}
-                    message="Email sent successfully!"
                     severity="success"
+                    anchorOrigin={{vertical: 'top', horizontal: 'right'}}
+                    ContentProps={{ component: props => <CustomSnackbarContent {...props} message="Email sent successfully!" /> }}
                 />
             </Wrapper>
         </Container>
