@@ -6,7 +6,7 @@ import {
     ContactInput,
     ContactInputMessage,
     ContactTitle,
-    Container, CustomSnackbarContent,
+    Container,
     Desc,
     Title,
     Wrapper

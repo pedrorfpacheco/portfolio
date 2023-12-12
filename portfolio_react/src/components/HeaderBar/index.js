@@ -24,11 +24,10 @@ const HeaderBar = ({onThemeToggle}) => {
     return (
         <Nav>
             <NavContainer>
-                <NavLogo to=''>
+                <NavLogo to='/' onClick={() => window.scrollTo(0, 0)}>
                     {theme === darkTheme ?
                         <img src={LogoPedroPacheco} alt='hero-image' style={{height: '35px', width: '270px'}}/> :
                         <img src={LogoPedroPachecoWhite} alt='hero-image' style={{height: '35px', width: '270px'}}/>}
-
                 </NavLogo>
                 <NavItems>
                     <NavLink href="#about">About</NavLink>
