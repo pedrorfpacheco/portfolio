@@ -18,13 +18,13 @@ const Contact = () => {
     const [open, setOpen] = React.useState(false);
     const form = useRef();
     const [fromName, setFromName] = useState(String);
-    const [email, setEmail] = useState(String);
+    const [fromEmail, setFromEmail] = useState(String);
     const [message, setMessage] = useState(String);
     const [subject, setSubject] = useState(String);
 
 
     const buttonEnabled = () => {
-        const validEmail = email.length > 15;
+        const validEmail = fromEmail.length > 15;
         const validFromName = fromName.length > 2;
         const validMessage = message.length > 30;
         const validSubject = subject.length > 4;
@@ -37,7 +37,7 @@ const Contact = () => {
         emailjs.sendForm('service_2s0lq37', 'template_portfolio_prfp', form.current, 'wiE0_5CvMYL0BKDIf')
             .then((result) => {
                 setOpen(true);
-                console.log("Form submitted: ", {email, fromName, subject, message})
+                console.log("Form submitted: ", {fromEmail, fromName, subject, message})
                 form.current.reset();
             }, (error) => {
                 console.log(error.text);
@@ -70,8 +70,8 @@ const Contact = () => {
                 <ContactRef ref={refEmail} style={{opacity: inViewEmail ? 1 : 0, transition: 'opacity 0.8s ease-out'}}>
                     <ContactForm ref={form} onSubmit={handleSubmit}>
                         <ContactTitle>Email Me 📩</ContactTitle>
-                        <ContactInput placeholder="Your Email" name="from_email" value={email}
-                                      onChange={(email) => setEmail(email.target.value)}/>
+                        <ContactInput placeholder="Your Email" name="from_email" value={fromEmail}
+                                      onChange={(fromEmail) => setFromEmail(fromEmail.target.value)}/>
                         <ContactInput placeholder="Your Name" name="fromName" value={fromName}
                                       onChange={(fromName) => setFromName(fromName.target.value)}/>
                         <ContactInput placeholder="Subject" name="subject" value={subject}
