@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf538fe7.css",
-    "main.js": "/portfolio/static/js/main.5b7aa715.js",
+    "main.js": "/portfolio/static/js/main.7773ef88.js",
     "static/media/PerfilPedroPacheco.jpg": "/portfolio/static/media/PerfilPedroPacheco.0d7ddda3a293dcf979ac.jpg",
     "static/media/LogoPedroPachecoWhite.png": "/portfolio/static/media/LogoPedroPachecoWhite.d18b02c447c4f5f74cfd.png",
     "static/media/LogoPedroPacheco.png": "/portfolio/static/media/LogoPedroPacheco.410e9cde0e49beeda763.png",
     "index.html": "/portfolio/index.html",
     "main.bf538fe7.css.map": "/portfolio/static/css/main.bf538fe7.css.map",
-    "main.5b7aa715.js.map": "/portfolio/static/js/main.5b7aa715.js.map"
+    "main.7773ef88.js.map": "/portfolio/static/js/main.7773ef88.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.5b7aa715.js"
+    "static/js/main.7773ef88.js"
   ]
 }
