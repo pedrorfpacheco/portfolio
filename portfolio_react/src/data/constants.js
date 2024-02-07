@@ -90,7 +90,7 @@ export const experiences = [
         img: "https://play-lh.googleusercontent.com/4Kbf66TuCTuZDa2OoGT4nvkI1cAdOhXuJ2g6WdwTqFasuRgyqazGu_O2pis7XWAFBQgR",
         role: "Pizzaiolo (Pizza Maker) - Part-Time",
         company: "Telepizza",
-        date: "Dec 2020 - Dec 2021",
+        date: "Mar 2020 - Jan 2021",
         desc: "I was employed part-time at a pizza place, I worked as pizzaiolo, customer service (cashier and telephone) and distributor.",
         skills: [
             "Customer service",
