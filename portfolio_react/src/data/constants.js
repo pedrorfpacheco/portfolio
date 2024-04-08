@@ -41,13 +41,7 @@ export const experiences = [
             "TypeScript",
             "React.js",
             "Jira",
-        ],
-        docs: [
-            {
-                label: "Banking Concepts",
-                src: "https://drive.google.com/file/d/1oYz5I-7-3XL0mSLQWCSYEV4eYb2RhBJa/view?usp=sharing"
-            }
-        ],
+        ]
     },
     {
         id: 1,
@@ -77,13 +71,7 @@ export const experiences = [
             "Teamwork",
             "Sales",
             "Freight transport"
-        ],
-        docs: [
-            {
-                label: "Excellent Service",
-                src: "https://drive.google.com/file/d/18WKXSY8Er6YfKRMEaNZhUTEh0kyHkbUf/view?usp=sharing"
-            }
-        ],
+        ]
     },
     {
         id: 3,
