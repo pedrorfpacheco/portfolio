@@ -20,9 +20,32 @@ export const Bio = {
 
 export const experiences = [
     {
-        id: 0,
+        id: 4,
         img: "https://www.itjobs.pt/empresa/natixis-portugal/logo/social",
-        role: "Full Stack Software Developer IEFP Internship ",
+        role: "Backend Software Engineer",
+        company: "Natixis in Portugal",
+        date: "Apr 2024 - At the moment",
+        desc: "I work at Natixis as a consultant for Agap2IT. I'm on a mature project supporting the Business Analysts on a " +
+            "daily basis, solving problems and developing new features for the project. As for the support given to the " +
+            "Business Analysts, I deal with the logs of this project and the management of daily automatic scripts on the application. " +
+            "The stack used in this project is Java with SQL databases. \n" +
+            "This project has an architecture based on microservices and communicates with an external project.",
+        skills: [
+            "Java",
+            "Spring Framework",
+            "Maven",
+            "SQL",
+            "Kanban",
+            "Control M",
+            "Jira",
+            "XML",
+            "BitBucket",
+        ]
+    },
+    {
+        id: 3,
+        img: "https://www.itjobs.pt/empresa/natixis-portugal/logo/social",
+        role: "Full Stack Software Developer",
         company: "Natixis in Portugal",
         date: "Nov 2022 - Nov 2023",
         desc: "As a Junior Full Stack Developer, I worked on projects involving technologies " +
@@ -44,7 +67,7 @@ export const experiences = [
         ]
     },
     {
-        id: 1,
+        id: 2,
         img: "https://www.itjobs.pt/empresa/natixis-portugal/logo/social",
         role: "Full Stack Software Developer Curricular Internship ",
         company: "Natixis in Portugal",
@@ -60,7 +83,7 @@ export const experiences = [
         ],
     },
     {
-        id: 2,
+        id: 1,
         img: "https://missao.continente.pt/media/lcqpnrg0/logo-sonae-mc.jpg",
         role: "Customer service (Cashier) - Part-Time",
         company: "Sonae MC - Continente Modelo Rio Tinto - Part-Time",
@@ -74,7 +97,7 @@ export const experiences = [
         ]
     },
     {
-        id: 3,
+        id: 0,
         img: "https://play-lh.googleusercontent.com/4Kbf66TuCTuZDa2OoGT4nvkI1cAdOhXuJ2g6WdwTqFasuRgyqazGu_O2pis7XWAFBQgR",
         role: "Pizzaiolo (Pizza Maker) - Part-Time",
         company: "Telepizza",
@@ -96,7 +119,7 @@ export const education = [
         school: "ISEP - Instituto Superior de Engenharia do Porto",
         degree: "Master's Degree, Software Engineering",
         date: "Oct 2022 - at the moment",
-        desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
+        desc: "",
     },
     {
         id: 0,
@@ -104,7 +127,7 @@ export const education = [
         school: "ISEP - Instituto Superior de Engenharia do Porto",
         degree: "Bachelor's Degree, Computer Engineering",
         date: "Oct 2019 - Sep 2022",
-        desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
+        desc: "",
         docs: [
             {
                 label: "Impact of the Pandemic on Industry",
