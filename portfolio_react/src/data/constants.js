@@ -71,7 +71,7 @@ export const experiences = [
         img: "https://www.itjobs.pt/empresa/natixis-portugal/logo/social",
         role: "Full Stack Software Developer Curricular Internship ",
         company: "Natixis in Portugal",
-        date: "Mar 2022 - Aug 2023",
+        date: "Mar 2022 - Aug 2022",
         desc: "As a curricular intern, I worked on projects involving technologies such as Java, Spring Boot, React. Implementations were delivered efficiently using GitLab for continuous integration and continuous delivery (CI/CD), while we built microservices with Java and microfrontends with React.",
         skills: [
             "Java",
