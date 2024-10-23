@@ -1,6 +1,8 @@
 # portfolio_react
 
-This is a website of my portfolio of my career in Software Engineer with React.
+This is a web app for my portfolio of my career in Software Engineer.
+
+This web app is being developed using Javascript with React.
 
 ## Main goals 
 
