@@ -57,12 +57,15 @@ export const experiences = [
         skills: [
             "Java",
             "Spring Framework",
+            "JUnit",
+            "Mockito",
             "Docker",
             "RabbitMQ",
             "GCP",
             "MongoDB",
             "TypeScript",
             "React.js",
+            "Cypress",
             "Jira",
         ]
     },
@@ -76,6 +79,8 @@ export const experiences = [
         skills: [
             "Java",
             "Spring Framework",
+            "JUnit",
+            "Mockito",
             "MongoDB",
             "TypeScript",
             "React.js",
