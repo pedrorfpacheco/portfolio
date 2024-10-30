@@ -25,7 +25,7 @@ export const experiences = [
         role: "Backend Software Engineer",
         company: "Natixis in Portugal",
         date: "Apr 2024 - At the moment",
-        desc: "I work at Natixis as a consultant for Agap2IT. I'm on a mature project supporting the Business Analysts on a " +
+        desc: "I work at Natixis as an Agap2IT consultant. I'm on a mature project supporting the Business Analysts on a " +
             "daily basis, solving problems and developing new features for the project. As for the support given to the " +
             "Business Analysts, I deal with the logs of this project and the management of daily automatic scripts on the application. " +
             "The stack used in this project is Java with SQL databases. \n" +
