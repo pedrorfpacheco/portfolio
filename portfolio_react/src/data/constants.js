@@ -48,7 +48,7 @@ export const experiences = [
         role: "Full Stack Software Developer",
         company: "Natixis in Portugal",
         date: "Nov 2022 - Nov 2023",
-        desc: "As a Junior Full Stack Developer, I worked on projects involving technologies " +
+        desc: "As a Full Stack Developer, I worked on projects involving technologies " +
             "such as Java, Spring Boot, React, RabbitMQ, Docker and GCP. Implementations were " +
             "delivered efficiently using GitLab for continuous integration and continuous " +
             "delivery (CI/CD), while we built microservices with Java and microfrontends with React. " +
@@ -75,7 +75,7 @@ export const experiences = [
         role: "Full Stack Software Developer Curricular Internship ",
         company: "Natixis in Portugal",
         date: "Mar 2022 - Aug 2022",
-        desc: "As a curricular intern, I worked on projects involving technologies such as Java, Spring Boot, React. Implementations were delivered efficiently using GitLab for continuous integration and continuous delivery (CI/CD), while we built microservices with Java and microfrontends with React.",
+        desc: "As a intern, I worked on projects involving technologies such as Java, Spring Boot, React. Implementations were delivered efficiently using GitLab for continuous integration and continuous delivery (CI/CD), while we built microservices with Java and microfrontends with React.",
         skills: [
             "Java",
             "Spring Framework",
