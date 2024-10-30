@@ -72,7 +72,7 @@ export const experiences = [
     {
         id: 2,
         img: "https://www.itjobs.pt/empresa/natixis-portugal/logo/social",
-        role: "Full Stack Software Developer Curricular Internship ",
+        role: "Full Stack Software Developer Internship ",
         company: "Natixis in Portugal",
         date: "Mar 2022 - Aug 2022",
         desc: "As a intern, I worked on projects involving technologies such as Java, Spring Boot, React. Implementations were delivered efficiently using GitLab for continuous integration and continuous delivery (CI/CD), while we built microservices with Java and microfrontends with React.",
@@ -121,7 +121,7 @@ export const education = [
     {
         id: 0,
         img: "https://www.sighabitat.pt/files/entidades/123_1.jpg",
-        school: "ISEP - Instituto Superior de Engenharia do Porto",
+        school: "ISEP - Polytechnic Institute of Porto",
         degree: "Master's Degree, Software Engineering",
         date: "Oct 2022 - at the moment",
         desc: "",
@@ -129,7 +129,7 @@ export const education = [
     {
         id: 0,
         img: "https://www.sighabitat.pt/files/entidades/123_1.jpg",
-        school: "ISEP - Instituto Superior de Engenharia do Porto",
+        school: "ISEP - Polytechnic Institute of Porto",
         degree: "Bachelor's Degree, Computer Engineering",
         date: "Oct 2019 - Sep 2022",
         desc: "",
