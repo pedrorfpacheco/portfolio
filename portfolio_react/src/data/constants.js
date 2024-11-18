@@ -15,7 +15,7 @@ export const Bio = {
     github: "https://github.com/pedrorfpacheco",
     linkedin: "https://www.linkedin.com/in/pedrorfpacheco/",
     dev: "https://dev.to/pedrorfpacheco",
-    resume: "https://drive.google.com/file/d/1fktJaVeXnu67UKo4dJ8bdUfVYp-rnLD_/view?usp=sharing",
+    resume: "https://drive.google.com/file/d/1RRm_56dbn8aQXUSUT6e5KmdDNsrgPq1z/view?usp=sharing",
 };
 
 export const experiences = [
