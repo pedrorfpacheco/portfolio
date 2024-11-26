@@ -157,7 +157,7 @@ export const education = [
     {
         id: 0,
         img: "https://www.sighabitat.pt/files/entidades/123_1.jpg",
-        school: "ISEP - Instituto Superior de Engenharia do Porto",
+        school: "ISEP - Polytechnic Institute of Porto",
         degree: "Bachelor's Degree, Electrical and Computer Engineering (Not finished)",
         date: "Oct 2018 - Jun 2019",
         docs: [
