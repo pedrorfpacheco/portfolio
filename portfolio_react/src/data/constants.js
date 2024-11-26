@@ -40,6 +40,12 @@ export const experiences = [
             "Jira",
             "XML",
             "BitBucket",
+        ],
+        docs: [
+            {
+                label: "Codebashing Certificate in Java",
+                src: "https://drive.google.com/file/d/1p6FPstSwIdlj3W-NVVDNkxIxVayVhCMK/view?usp=sharing"
+            }
         ]
     },
     {
