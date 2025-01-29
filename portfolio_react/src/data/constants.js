@@ -20,16 +20,23 @@ export const Bio = {
 
 export const experiences = [
     {
+        id: 5,
+        img: "https://sofico.global/app/uploads/2023/12/Sofico-logo-1200.jpeg",
+        role: "Backend Software Engineer",
+        company: "Sofico",
+        date: "Jan 2025 - At the moment",
+        desc: "",
+    },
+    {
         id: 4,
         img: "https://www.itjobs.pt/empresa/natixis-portugal/logo/social",
         role: "Backend Software Engineer",
         company: "Natixis in Portugal",
-        date: "Apr 2024 - At the moment",
-        desc: "I work at Natixis as an Agap2IT consultant. I'm on a mature project supporting the Business Analysts on a " +
-            "daily basis, solving problems and developing new features for the project. As for the support given to the " +
-            "Business Analysts, I deal with the logs of this project and the management of daily automatic scripts on the application. " +
-            "The stack used in this project is Java with SQL databases. \n" +
-            "This project has an architecture based on microservices and communicates with an external project.",
+        date: "Apr 2024 - Jan 2025",
+        desc: "I worked as a consultant for Agap2IT, contributing to a mature project where I supported Business Analysts daily by troubleshooting " +
+            "issues and developing new features. My responsibilities included managing project logs and overseeing the execution of automated daily " +
+            "scripts within the application. The project use a tech stack based on Java and SQL databases, with a microservices architecture that " +
+            "integrated with an external system.",
         skills: [
             "Java",
             "Spring Framework",
@@ -95,7 +102,7 @@ export const experiences = [
     },
     {
         id: 1,
-        img: "https://missao.continente.pt/media/lcqpnrg0/logo-sonae-mc.jpg",
+        img: "https://www.eitmanufacturing.eu/wp-content/uploads/2022/05/MC_Logo_POS_RGB.png",
         role: "Customer service (Cashier) - Part-Time",
         company: "Sonae MC - Continente Modelo Rio Tinto - Part-Time",
         date: "Dec 2020 - Dec 2021",
